@@ -38,8 +38,11 @@ You can use <b>Truffle</b> hoặc <b>Remix</b> to build and deploy the contract.
     <br /> - Click left menu item "<b>Solidity complier</b>", select "<b>0.5.16</b>" in COMPILER section. And then click "<b>Complile PancakeFactory.sol</b>", compile success and no error.
     <br /> - Click left menu item "<b>Deploy &amp; run transactions</b>", select "<b>Injected Web3</b>" in ENVIRONMENT section. This step request to connect an account in Metamask.
     <br />Select "<b>PancakeFactory - ...</b>" in CONTRACT item. Enter your any bsc wallet address in "<b>address_feeToSetter</b>" input. And then click "<b>Deploy</b>" button, and wait.
-    <br /> - Once deployed, you will see the contract address of PancakeFactory. In the "Deployed Contracts" section, you will see the new deployed contract. Expand it and you will get INIT_CODE_PAIR_HASH. For example:
-    <br />PancakeFactory contract: <a href="https://testnet.bscscan.com/address/0xb7926c0430afb07aa7defde6da862ae0bde767bc">0xB7926C0430Afb07AA7DEfDE6DA862aE0Bde767bc</a>
-    <br />INIT_CODE_PAIR_HASH: 0xecba335299a6693cb2ebc4782e74669b84290b6378ea3a3873c7231a8d7d1074
+    <br /> - Once deployed, you will see the <b>contract address of PancakeFactory</b>. In the "Deployed Contracts" section, you will see the new deployed contract. Expand it and you will get <b>INIT_CODE_PAIR_HASH</b>. You need to store them, and they will be used in Step 2.
   </li>
+</ul>
+<p>For example with my deployed contract:
+<ul>
+  <li>PancakeFactory contract: <a href="https://testnet.bscscan.com/address/0xb7926c0430afb07aa7defde6da862ae0bde767bc">0xB7926C0430Afb07AA7DEfDE6DA862aE0Bde767bc</a></li>
+  <li>INIT_CODE_PAIR_HASH: 0xecba335299a6693cb2ebc4782e74669b84290b6378ea3a3873c7231a8d7d1074</li>
 </ul>
