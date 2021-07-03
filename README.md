@@ -1,6 +1,6 @@
 # Pancake Swap V1 on BSC Testnet
-This repo contains all source code of Pancake Swap. It has modified to run on Binance Smart Chain (BSC) Testnet.
-<br />My original purpose is to use it to test my DApps that connect to Pancake Swap. Using the BSC Testnet environment has helped me a lot in reducing the cost and time of DApps development. I found it very useful for developers so I shared this version.
+This repo contains all source code of Pancake Swap V1. It has modified to run on Binance Smart Chain (BSC) Testnet.
+<br />My original purpose is to use it to test my DApps that connect to Pancake Swap. Using the BSC Testnet environment has helped me a lot in reducing the cost and time of DApps development. I see thay it very useful for developers so I shared this version.
 
 <p>If you want to use Pancake Swap v1 on BSC Testnet, please to the link: https://pancake.kiemtienonline360.com/
 <br />If you want to implement your own Pancake Swap, please see detailed instructions below.
