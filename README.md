@@ -46,3 +46,44 @@ You can use <b>Truffle</b> hoặc <b>Remix</b> to build and deploy the contract.
   <li>PancakeFactory contract: <a href="https://testnet.bscscan.com/address/0xb7926c0430afb07aa7defde6da862ae0bde767bc">0xB7926C0430Afb07AA7DEfDE6DA862aE0Bde767bc</a></li>
   <li>INIT_CODE_PAIR_HASH: 0xecba335299a6693cb2ebc4782e74669b84290b6378ea3a3873c7231a8d7d1074</li>
 </ul>
+<p><b>Note</b>: Sometimes the https://remix.ethereum.org page has a problem to create new sol file, you can use the link http://remix.ethereum.org (Not HTTPS)
+
+# Step 2: Deploy Pancake Router Contract
+The steps are almost the same as Step 1, but with some notices.
+<p>The steps are as follows:
+<ul>
+  <li>
+    <b>1. Install required libraries</b>
+    <br />Go to "pancake-swap-router-v1" folder and run npm install:
+    <br />&nbsp;&nbsp;&nbsp;&nbsp; <code>cd pancake-swap-router-v1</code>
+    <br />&nbsp;&nbsp;&nbsp;&nbsp; <code>npm install</code>
+  </li>
+  <li>
+    <b>2. Slightly edited in the source of the contract</b>
+    <br />Open the file "<b>contracts/libraries/PancakeLibrary.sol</b>", go to line 25 (In function <b>pairFor()</b>), change the hexa string to INIT_CODE_PAIR_HASH of PancakeFactory in Step 1. And then save the file.
+  </li>
+  <li>
+    <b>3. Join contract files to 1 file</b>
+    <br />I created a small tool to help join the contract files into 1 file. Run below command to join:
+    <br />&nbsp;&nbsp;&nbsp;&nbsp; <code>mkdir build</code>
+    <br />&nbsp;&nbsp;&nbsp;&nbsp; <code>node tools/merge-contract.js</code>
+    <br />You can see the file <b>PancakeRouter01.sol.merge.txt</b> in build directory.
+  </li>
+  <li>
+    <b>4. Deploy on Remix</b>
+    <br /> - Go the Remix website: https://remix.ethereum.org
+    <br /> - Create new contract file <b>PancakeRouter.sol</b> on Remix and then copy all content in PancakeRouter01.sol.merge.txt to the PancakeRouter.sol file.
+    <br /> - Click left menu item "<b>Solidity complier</b>", select "<b>0.6.6</b>" in COMPILER section, check "<b>Enable optimization</b>" in COMPILER CONFIGURATION section. And then click "<b>Complile PancakeRouter.sol</b>", compile success and no error.
+    <br /> - Click left menu item "<b>Deploy &amp; run transactions</b>", select "<b>Injected Web3</b>" in ENVIRONMENT section. This step request to connect an account in Metamask.
+    <br />Select "<b>PancakeRouter01 - ...</b>" in CONTRACT item. Enter the PancakeFactory address (In Step 1) and WBNB address <a href="https://testnet.bscscan.com/address/0xae13d989dac2f0debff460ac112a837c89baa7cd">0xae13d989daC2f0dEbFf460aC112a837C89BAa7cd</a> as two parameters when initializing PancakeRouter. And then click "<b>Deploy</b>" button, and wait.
+    <br /> - Once deployed, you will see the <b>contract address of PancakeRouter</b>. You need to store this address, and it will be used in Step 3.
+  </li>
+</ul>
+<p>For example with my deployed contract:
+<ul>
+  <li>PancakeRouter contract: <a href="https://testnet.bscscan.com/address/0x9Ac64Cc6e4415144C455BD8E4837Fea55603e5c3">0x9Ac64Cc6e4415144C455BD8E4837Fea55603e5c3</a></li>
+</ul>
+<p><b>Note</b>: You can use the above WBNB address or you can create a new WBNB contract yourself.
+
+# Step 3: Deploy Pancake Swap Interface
+Updating...
