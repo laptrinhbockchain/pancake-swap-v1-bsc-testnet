@@ -85,5 +85,39 @@ The steps are almost the same as Step 1, but with some notices.
 </ul>
 <p><b>Note</b>: You can use the above WBNB address or you can create a new WBNB contract yourself.
 
-# Step 3: Deploy Pancake Swap Interface
-Updating...
+# Step 3: Deploy PancakeSwap Interface
+This step is the most complicated because there are many modifications. 
+<p>The steps are as follows:
+<ul>
+  <li>
+    <b>1. Install required libraries</b>
+    <br />Go to "pancake-swap-interface-v1" folder and run npm install:
+    <br />&nbsp;&nbsp;&nbsp;&nbsp; <code>cd pancake-swap-interface-v1</code>
+    <br />&nbsp;&nbsp;&nbsp;&nbsp; <code>npm install</code>
+  </li>
+  <li>
+    <b>2. Modify source code</b>
+    <br />There are quite a few places to edit, I list them as below, not necessarily in order:
+    <ul>
+      <li>Go to the file "<b>src/constants/token/pancakeswap.json</b>" to add or edit the default supported tokens on Testnet. Tokens on BSC Testnet you can deploy yourself, token source code can refer to: <a href="https://testnet.bscscan.com/address/0x7ef95a0fee0dd31b22626fa2e10ee6a223f8a684">USDT</a>, <a href="https://testnet.bscscan.com/address/0x8babbb98678facc7342735486c851abd7a0d17ca">ETH</a>, <a href="https://testnet.bscscan.com/address/0x78867BbEeF44f2326bF8DDd1941a4439382EF2A7">BUSD</a>, <a href="https://testnet.bscscan.com/address/0x8a9424745056Eb399FD19a0EC26A14316684e274">DAI</a>. Remember to add images for your new tokens in the "<b>public/images/coins</b>" folder with the token address in lowercase.</li>
+      <li>Go to the file "<b>src/constants/index.ts</b>", update the value for <b>ROUTER_ADDRESS</b> which is the PancakeRouter address deployed in Step 2. In this file you also edit the default display tokens.</li>
+      <li>I fixed <b>supportedChainIds</b> and <b>BscConnector</b> in file "<b>src/connectors/index.ts</b>" to support only BSC Testnet. You don't need to change this file unless you want to deploy on another network.</li>
+      <li>Currently the menu I have commented on most of the menu items, if you want to change you can edit it in the file "<b>src/components/Menu/config.ts</b>".</li>
+      <li>Open the 3 files "<b>node_modules/@pancakeswap-libs/sdk/dist/constants.d.ts</b>", "<b>node_modules/@pancakeswap-libs/sdk/dist/sdk.cjs.development.js</b>" and "<b>node_modules/@pancakeswap-libs/sdk/dist/sdk.cjs.production.min.js</b>", update the values for two variables: FACTORY_ADDRESS and INIT_CODE_HASH.</li>
+      <li>If the WBNB you use is not <b>0xae13d989daC2f0dEbFf460aC112a837C89BAa7cd</b>, you should update the new WBNB address in the two files "<b>node_modules/@pancakeswap-libs/sdk/dist/sdk.cjs.development.js</b>" and "<b>node_modules/@pancakeswap-libs/sdk/dist/sdk.cjs.production.min.js</b>".</li>
+    </ul>
+  </li>
+  <li>
+    <b>3. Run test at local</b>
+    <br />You run the following command to test locally:
+    <br />&nbsp;&nbsp;&nbsp;&nbsp; <code>yarn start</code>
+  </li>
+  <li>
+    <b>4. Deploy to Github or your host</b>
+    <br />You open the file "<b>.env.production</b>" to edit the configuration, especially the <b>PUBLIC_URL</b> configuration. Then you type the following command to build:
+    <br />&nbsp;&nbsp;&nbsp;&nbsp; <code>yarn build</code>
+    <br />Then you put all the files in the build directory to github or host to run.
+  </li>
+ </ul>
+ 
+ <p>You can find out more at https://kiemtienonline360.com/huong-dan-trien-khai-pancake-swap-v1-tren-moi-truong-binance-smart-chain-bsc-testnet/
