@@ -94,7 +94,8 @@ This step is the most complicated because there are many modifications.
     <br />Go to "pancake-swap-interface-v1" folder and run npm install:
     <br />&nbsp;&nbsp;&nbsp;&nbsp; <code>cd pancake-swap-interface-v1</code>
     <br />&nbsp;&nbsp;&nbsp;&nbsp; <code>npm install --global yarn</code>
-    <br />&nbsp;&nbsp;&nbsp;&nbsp; <code>yarn</code>
+    <br />&nbsp;&nbsp;&nbsp;&nbsp; <code>npm install</code>
+    <br />And then copy <b>.env.development</b> to <b>.env</b>
   </li>
   <li>
     <b>2. Modify source code</b>
@@ -112,6 +113,7 @@ This step is the most complicated because there are many modifications.
     <b>3. Run test at local</b>
     <br />You run the following command to test locally:
     <br />&nbsp;&nbsp;&nbsp;&nbsp; <code>yarn start</code>
+    <br />If you see the error "<b><i>Type 'MergedState' is not assignable to type...</i></b>" in the file "<b><i>src/state/index.ts</i></b>", please see the link https://github.com/kiemtienonline360/pancake-swap-v1-bsc-testnet/issues/1 to fix the error.
   </li>
   <li>
     <b>4. Deploy to Github or your host</b>
