@@ -94,6 +94,7 @@ This step is the most complicated because there are many modifications.
     <br />Go to "pancake-swap-interface-v1" folder and run npm install:
     <br />&nbsp;&nbsp;&nbsp;&nbsp; <code>cd pancake-swap-interface-v1</code>
     <br />&nbsp;&nbsp;&nbsp;&nbsp; <code>npm install</code>
+    <br />&nbsp;&nbsp;&nbsp;&nbsp; <code>npm install --global yarn</code>
   </li>
   <li>
     <b>2. Modify source code</b>
