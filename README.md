@@ -12,7 +12,7 @@ This repo contains all source code of Pancake Swap V1. It has modified to run on
   <li><b>Step 3</b>: Deploy Pancake Swap Interface</li>
 </ul>
 <p>Of these three steps, step 3 will take the longest time, step 2 need for a little attention. It takes time for me, but I will guide you how to deploy them in just 10 minutes.
-<p>Before you start, you need to install NodeJs (Version 8 or later). In addition, you must also have experience to deploy contracts on Remix. You also install Metamask extension on Chrome browser and added "BSC Testnet".
+<p>Before you start, you need to install <b>NodeJs</b> (Version 8 or later) and <b>GIT</b>. In addition, you must also have experience to deploy contracts on Remix. You also install Metamask extension on Chrome browser and added "BSC Testnet".
 
 # Step 1: Deploy Pancake Factory Contract
 You can use <b>Truffle</b> <b>Remix</b> to build and deploy the contract. But for simplicity you should use Remix.
