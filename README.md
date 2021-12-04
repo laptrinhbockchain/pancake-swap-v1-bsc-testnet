@@ -105,7 +105,7 @@ This step is the most complicated because there are many modifications.
       <li>Go to the file "<b>src/constants/index.ts</b>", update the value for <b>ROUTER_ADDRESS</b> which is the PancakeRouter address deployed in Step 2. In this file you also edit the default display tokens.</li>
       <li>I fixed <b>supportedChainIds</b> and <b>BscConnector</b> in file "<b>src/connectors/index.ts</b>" to support only BSC Testnet. You don't need to change this file unless you want to deploy on another network.</li>
       <li>Currently the menu I have commented on most of the menu items, if you want to change you can edit it in the file "<b>src/components/Menu/config.ts</b>".</li>
-      <li>Open the 3 files "<b>node_modules/@pancakeswap-libs/sdk/dist/constants.d.ts</b>", "<b>node_modules/@pancakeswap-libs/sdk/dist/sdk.cjs.development.js</b>" and "<b>node_modules/@pancakeswap-libs/sdk/dist/sdk.cjs.production.min.js</b>", update the values for two variables: FACTORY_ADDRESS and INIT_CODE_HASH.</li>
+      <li>Open the 3 files "<b>node_modules/@pancakeswap-libs/sdk/dist/constants.d.ts</b>", "<b>node_modules/@pancakeswap-libs/sdk/dist/sdk.cjs.development.js</b>", "<b>node_modules/@pancakeswap-libs/sdk/dist/sdk.esm.js</b>" and "<b>node_modules/@pancakeswap-libs/sdk/dist/sdk.cjs.production.min.js</b>", update the values for two variables: FACTORY_ADDRESS and INIT_CODE_HASH.</li>
       <li>If the WBNB you use is not <b>0xae13d989daC2f0dEbFf460aC112a837C89BAa7cd</b>, you should update the new WBNB address in the two files "<b>node_modules/@pancakeswap-libs/sdk/dist/sdk.cjs.development.js</b>" and "<b>node_modules/@pancakeswap-libs/sdk/dist/sdk.cjs.production.min.js</b>".</li>
     </ul>
   </li>
