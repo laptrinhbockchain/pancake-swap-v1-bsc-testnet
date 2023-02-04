@@ -2,7 +2,7 @@
 This repo contains all source code of Pancake Swap V1. It has modified to run on Binance Smart Chain (BSC) Testnet.
 <br />My original purpose is to use it to test my DApps that connect to Pancake Swap. Using the BSC Testnet environment has helped me a lot in reducing the cost and time of DApps development. I see thay it very useful for developers so I shared this version.
 
-<p>If you want to use Pancake Swap v1 on BSC Testnet, please to the link: https://pancake.kiemtienonline360.com/
+<p>If you want to use Pancake Swap v1 on BSC Testnet, please to the link: https://pancake.kiemtienonline360.com. Currently, this link is removed, so you can get direct build version from link https://github.com/laptrinhbockchain/pancake-swap-v1-bsc-testnet/tree/main/build and deploy on your host
 <br />If you want to implement your own Pancake Swap, please see detailed instructions below.
 
 # Step by step to deploy Pancake Swap V1
@@ -12,10 +12,10 @@ This repo contains all source code of Pancake Swap V1. It has modified to run on
   <li><b>Step 3</b>: Deploy Pancake Swap Interface</li>
 </ul>
 <p>Of these three steps, step 3 will take the longest time, step 2 need for a little attention. It takes time for me, but I will guide you how to deploy them in just 10 minutes.
-<p>Before you start, you need to install <b>NodeJs</b> (Version 8 or later) and <b>GIT</b>. In addition, you must also have experience to deploy contracts on Remix. You also install Metamask extension on Chrome browser and added "BSC Testnet".
+<p>Before you start, you need to install <b>NodeJs</b> (Version 8 or later) and <b>GIT</b>. In addition, you must also have experience to deploy contracts on <b>Remix</b>. You also install <b>Metamask</b> extension on Chrome browser and added "<b>BSC Testnet</b>".
 
 # Step 1: Deploy Pancake Factory Contract
-You can use <b>Truffle</b> <b>Remix</b> to build and deploy the contract. But for simplicity you should use Remix.
+You can use <b>Truffle</b> <b>Remix</b> to build and deploy the contract. But for simplicity you should use <b>Remix</b>.
 <p>The steps are as follows:
 <ul>
   <li>
@@ -30,6 +30,7 @@ You can use <b>Truffle</b> <b>Remix</b> to build and deploy the contract. But fo
     <br />&nbsp;&nbsp;&nbsp;&nbsp; <code>mkdir build</code>
     <br />&nbsp;&nbsp;&nbsp;&nbsp; <code>node tools/merge-contract.js</code>
     <br />You can see the file <b>PancakeFactory.sol.merge.txt</b> in build directory.
+    <br />A simpler way is to copy the contract source code directly from the address: <a href="https://testnet.bscscan.com/address/0xb7926c0430afb07aa7defde6da862ae0bde767bc#code">PancakeFactory Sourcecode</a>.
   </li>
   <li>
     <b>3. Deploy on Remix</b>
@@ -68,6 +69,7 @@ The steps are almost the same as Step 1, but with some notices.
     <br />&nbsp;&nbsp;&nbsp;&nbsp; <code>mkdir build</code>
     <br />&nbsp;&nbsp;&nbsp;&nbsp; <code>node tools/merge-contract.js</code>
     <br />You can see the file <b>PancakeRouter01.sol.merge.txt</b> in build directory.
+    <br />A simpler way is to copy the contract source code directly from the address: <a href="https://testnet.bscscan.com/address/0x9Ac64Cc6e4415144C455BD8E4837Fea55603e5c3#code">PancakeRouter Sourcecode</a>.
   </li>
   <li>
     <b>4. Deploy on Remix</b>
