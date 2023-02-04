@@ -3,7 +3,7 @@ This repo contains all source code of Pancake Swap V1. It has modified to run on
 <br />My original purpose is to use it to test my DApps that connect to Pancake Swap. Using the BSC Testnet environment has helped me a lot in reducing the cost and time of DApps development. I see thay it very useful for developers so I shared this version.
 
 <p>If you want to use Pancake Swap v1 on BSC Testnet, please to the link: https://pancake.kiemtienonline360.com. Currently, this link is removed, so you can get direct build version from link https://github.com/laptrinhbockchain/pancake-swap-v1-bsc-testnet/tree/main/build and deploy on your host
-<br />If you want to implement your own Pancake Swap, please see detailed instructions below.
+<p>If you want to implement your own Pancake Swap, please see detailed instructions below.
 
 # Step by step to deploy Pancake Swap V1
 <ul>
