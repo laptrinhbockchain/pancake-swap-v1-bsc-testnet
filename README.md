@@ -125,4 +125,4 @@ This step is the most complicated because there are many modifications.
   </li>
  </ul>
  
- <p>You can find out more at https://kiemtienonline360.com/huong-dan-trien-khai-pancake-swap-v1-tren-moi-truong-binance-smart-chain-bsc-testnet/
+ <p>You can find out more at https://laptrinhblockchain.net/huong-dan-trien-khai-pancake-swap-v1-tren-moi-truong-binance-smart-chain-bsc-testnet
