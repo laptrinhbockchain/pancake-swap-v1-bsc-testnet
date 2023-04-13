@@ -13,6 +13,7 @@ This repo contains all source code of Pancake Swap V1. It has modified to run on
 </ul>
 <p>Of these three steps, step 3 will take the longest time, step 2 need for a little attention. It takes time for me, but I will guide you how to deploy them in just 10 minutes.
 <p>Before you start, you need to install <b>NodeJs</b> (Version 8 or later) and <b>GIT</b>. In addition, you must also have experience to deploy contracts on <b>Remix</b>. You also install <b>Metamask</b> extension on Chrome browser and added "<b>BSC Testnet</b>".
+<p><b>Demo Link: <a href="https://heraswap.000webhostapp.com">https://heraswap.000webhostapp.com</a>.
 
 # Step 1: Deploy Pancake Factory Contract
 You can use <b>Truffle</b> <b>Remix</b> to build and deploy the contract. But for simplicity you should use <b>Remix</b>.
