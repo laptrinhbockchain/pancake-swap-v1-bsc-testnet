@@ -2,7 +2,8 @@
 This repo contains all source code of Pancake Swap V1. It has modified to run on Binance Smart Chain (BSC) Testnet.
 <br />My original purpose is to use it to test my DApps that connect to Pancake Swap. Using the BSC Testnet environment has helped me a lot in reducing the cost and time of DApps development. I see thay it very useful for developers so I shared this version.
 
-<p>If you want to use Pancake Swap v1 on BSC Testnet, please to the link: https://pancake.kiemtienonline360.com. Currently, this link is removed, so you can get direct build version from link https://github.com/laptrinhbockchain/pancake-swap-v1-bsc-testnet/tree/main/build and deploy on your host
+<p>If you want to use Pancake Swap v1 on BSC Testnet, please to the link: https://pancake.kiemtienonline360.com. Currently, this link is removed, so you can get direct build version from link https://github.com/laptrinhbockchain/pancake-swap-v1-bsc-testnet/tree/main/build and deploy on your host.
+<p><b>Demo Link: <a href="https://heraswap.000webhostapp.com">https://heraswap.000webhostapp.com</a>.
 <p>If you want to implement your own Pancake Swap, please see detailed instructions below.
 
 # Step by step to deploy Pancake Swap V1
@@ -13,7 +14,6 @@ This repo contains all source code of Pancake Swap V1. It has modified to run on
 </ul>
 <p>Of these three steps, step 3 will take the longest time, step 2 need for a little attention. It takes time for me, but I will guide you how to deploy them in just 10 minutes.
 <p>Before you start, you need to install <b>NodeJs</b> (Version 8 or later) and <b>GIT</b>. In addition, you must also have experience to deploy contracts on <b>Remix</b>. You also install <b>Metamask</b> extension on Chrome browser and added "<b>BSC Testnet</b>".
-<p><b>Demo Link: <a href="https://heraswap.000webhostapp.com">https://heraswap.000webhostapp.com</a>.
 
 # Step 1: Deploy Pancake Factory Contract
 You can use <b>Truffle</b> <b>Remix</b> to build and deploy the contract. But for simplicity you should use <b>Remix</b>.
