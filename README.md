@@ -2,11 +2,11 @@
 This repo contains all source code of Pancake Swap V1. It has modified to run on Binance Smart Chain (BSC) Testnet.
 <br />My original purpose is to use it to test my DApps that connect to Pancake Swap. Using the BSC Testnet environment has helped me a lot in reducing the cost and time of DApps development. I see thay it very useful for developers so I shared this version.
 
-<p>If you want to use Pancake Swap v1 on BSC Testnet, please to the link: https://pancake.kiemtienonline360.com. Currently, this link is removed, so you can get direct build version from link https://github.com/laptrinhbockchain/pancake-swap-v1-bsc-testnet/tree/main/build and deploy on your host.
-<p><b>Demo Link: <a href="https://heraswap.000webhostapp.com">https://heraswap.000webhostapp.com</a>.
-<p>If you want to implement your own Pancake Swap, please see detailed instructions below.
+<p>Due to some security issues, the links that support the display of UI of <b>PancakeSwap V1 on BSC Testnet</b> have been removed. But you can run it on your personal machine according to the instructions <a href="https://github.com/laptrinhbockchain/pancake-swap-v1-bsc-testnet-ui" target="_blank">UI for PancakeSwap V1 on BSC Testnet</a></p>
 
-# Step by step to deploy Pancake Swap V1
+<p>If you want to deploy your own Pancake Swap, please see detailed instructions below.
+
+## Step by step to deploy Pancake Swap V1
 <ul>
   <li><b>Step 1</b>: Deploy Pancake Factory Contract</li>
   <li><b>Step 2</b>: Deploy Pancake Router Contract</li>
@@ -15,7 +15,7 @@ This repo contains all source code of Pancake Swap V1. It has modified to run on
 <p>Of these three steps, step 3 will take the longest time, step 2 need for a little attention. It takes time for me, but I will guide you how to deploy them in just 10 minutes.
 <p>Before you start, you need to install <b>NodeJs</b> (Version 8 or later) and <b>GIT</b>. In addition, you must also have experience to deploy contracts on <b>Remix</b>. You also install <b>Metamask</b> extension on Chrome browser and added "<b>BSC Testnet</b>".
 
-# Step 1: Deploy Pancake Factory Contract
+## Step 1: Deploy Pancake Factory Contract
 You can use <b>Truffle</b> <b>Remix</b> to build and deploy the contract. But for simplicity you should use <b>Remix</b>.
 <p>The steps are as follows:
 <ul>
@@ -50,7 +50,7 @@ You can use <b>Truffle</b> <b>Remix</b> to build and deploy the contract. But fo
 </ul>
 <p><b>Note</b>: Sometimes the https://remix.ethereum.org page has a problem to create new sol file, you can use the link http://remix.ethereum.org (Not HTTPS)
 
-# Step 2: Deploy Pancake Router Contract
+## Step 2: Deploy Pancake Router Contract
 The steps are almost the same as Step 1, but with some notices.
 <p>The steps are as follows:
 <ul>
@@ -88,7 +88,7 @@ The steps are almost the same as Step 1, but with some notices.
 </ul>
 <p><b>Note</b>: You can use the above WBNB address or you can create a new WBNB contract yourself.
 
-# Step 3: Deploy PancakeSwap Interface
+## Step 3: Deploy PancakeSwap Interface
 This step is the most complicated because there are many modifications. 
 <p>The steps are as follows:
 <ul>
